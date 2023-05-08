@@ -1,0 +1,245 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --texto-mClaro: #000000;
+  --texto-mOscuro: #ffffff;
+  --back-mClaro: #ffffff;
+  --back-mOscuro: #313131;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+}
+
+body.modo-oscuro{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #313131;
+    color: #FFFFFF;
+}
+
+.modo{
+    background-image: url(/img/brightness-down.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    background-color: var(--back-mClaro);
+    height: 3vw;
+    width: 3vw;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 2vw 2vw 1vw;
+}
+
+h1{
+    font-size: 2vw;
+    color: #0A3871;
+    font-weight: bold;
+}
+
+.mode{
+    background-image: url(img/brightness-down.svg);
+}
+
+main{
+    display: flex;
+    padding: 0 4vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1{
+    width: 50%;
+    padding: 0 2em;
+}
+
+.user-text{
+    box-sizing: border-box;
+    border: 2px solid #d3d3d3;
+    background-color: #FFFFFF;
+    height: 250px;
+    width: 100%;
+    border-radius: 1em;
+    box-shadow: 3px 3px 4px #d3d3d3;
+    padding: 1em;
+}
+
+.user-text textarea{
+    color: #0A3871;
+    border: none;
+    resize: none;
+    font-size: 1.8em;
+    height: 100%;
+    width: 100%;
+}
+
+.user-text textarea:focus, textarea:active{
+  outline: none;
+}
+
+.alert4users{
+    display: flex;
+    margin-bottom: 1em;
+    padding: 0 1em;
+}
+
+.alert4users p{
+    font-size: 0.75em;
+    font-weight: bold;
+    margin: 0.75em;
+    color: #575757;
+}
+
+.buttons{
+    box-sizing: border-box;
+    margin-top: 2vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3vw;
+}
+
+.btn-encr{
+    transition: 250ms;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    border: none;
+    font-size: 1.2vw;
+    border-radius: 20px;
+    width: 40%;
+    height: 3em;
+    font-weight: bold;
+    margin: 0 2vw;
+    box-shadow: 2px 2px 5px #d3d3d3;
+}
+
+.btn-encr:hover{
+    background-color: #1f74dd;
+    scale: 1.02;
+}
+
+.btn-encr:active{
+    transition: 0ms;
+    scale: 1;
+    background-color: #0A3871;
+    
+}
+
+.btn-desencr{
+    transition: 250ms;
+    background-color: #a3a3a3;
+    color: #000000;
+    border: none;
+    font-size: 1.2vw;
+    border-radius: 20px;
+    width: 40%;
+    height: 3em;
+    font-weight: bold;
+    margin: 0 2vw;
+    box-shadow: 2px 2px 5px #d3d3d3;
+}
+
+.btn-desencr:hover{
+    background-color: #c98252;
+    scale: 1.02;
+}
+
+.btn-desencr:active{
+    transition: 0ms;
+    scale: 1;
+    background-color: #a3a3a3;
+}
+
+.section-2{
+    box-sizing: border-box;
+    display: flex;
+    width: 28%;
+    height: 500px;
+    padding: 1vw;
+    border-radius: 2vw;
+    flex-direction: column;
+    justify-content:space-evenly;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 5px #d3d3d3;
+}
+
+.cont-section2{
+    height: 100%;
+    padding: 1em;
+}
+
+.cont-previo img{
+    width: 100%;
+    margin-top: 3vw;
+}
+
+.cont-previo h3{
+    font-size: 1.6vw;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cont-previo p{
+    font-size: 1.1vw;
+    text-align: center;
+    margin-top: 2vw;
+}
+
+.cont-mensaje{
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.mensaje{
+    box-sizing: border-box;
+    padding: 1em;
+    color: #000000;
+    border: none;
+    border-radius: 1vw;
+    font-size: 1.8em;
+    resize: none;
+    height: 85%;
+    width: 100%;
+}
+
+.mensaje:focus, .mensaje:active{
+  outline: none;
+}
+
+.btn-copiar{
+    transition: 250ms;
+    background-color: #a3a3a3;
+    color: #000000;
+    border: none;
+    font-size: 1.2vw;
+    border-radius: 1.1vw;
+    height: 3em;
+    font-weight: bold;
+    margin: 2vw;
+    box-shadow: 2px 2px 5px #d3d3d3;
+}
+
+.btn-copiar:hover{
+    background-color: #c98252;
+    scale: 1.02;
+}
+
+.btn-copiar:active{
+    transition: 0ms;
+    scale: 1;
+    background-color: #a3a3a3;
+}
+
+footer{
+    font-size: 1.25vw;
+    text-align: center;
+    margin-top: 2vw;   
+}

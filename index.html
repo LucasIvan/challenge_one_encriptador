@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style/style.css">
+        <title>Encriptador</title>
+    </head>
+    <body>
+        <header class="header">
+            <a href="https://www.aluracursos.com/" target="_blank"><img class="logo" src="img/Logologo.svg" alt="logo"></a>
+            <h1>Encriptador</h1>
+            <button class="modo" type="button"></button>
+        </header>
+
+        <main>
+            <section class="section-1">
+                <div class="user-text">
+                    <textarea class="input-text" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                <div class="alert4users">
+                    <img src="img/exclamation-circle-fillalerta.svg" alt="exclamación">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="buttons">
+                    <button class="btn-encr" onclick="btnEncriptar()" type="button">ENCRIPTAR</button>
+                    <button class="btn-desencr" onclick="btnDesencriptar()" type="button">DESENCRIPTAR</button>
+                </div>
+            </section>
+
+            <section class="section-2">
+                <div class="cont-section2">
+                    <div id="previo" class="cont-previo">
+                        <img src="img/Muñeco.svg" alt="imágen_encriptador">
+                        <h3>Ningún mensaje fue encontrado</h3>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                    <div id="mensaje" class="cont-mensaje">
+                        <p class="mensaje"></p>
+                        <button class="btn-copiar" onclick="btnCopiar()" type="button">COPIAR</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Lucas Molina</p>
+            <a href="https://www.linkedin.com/in/lucasmolina55/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
+            <a href="https://github.com/LucasIvan" target="_blank"><img src="img/github.svg" alt=""></a>
+            <a href="https://www.instagram.com/lucasivanmolina/" target="_blank"><img src="img/instagram.svg" alt=""></a>
+        </footer>
+        <script src="scripts/scripts.js"></script>
+        <script src="scripts/encriptador.js"></script>
+    </body>
+</html>
