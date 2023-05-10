@@ -62,12 +62,11 @@ main{
 
 .user-text{
     box-sizing: border-box;
-    border: 2px solid #d3d3d3;
     background-color: #FFFFFF;
     height: 250px;
     width: 100%;
     border-radius: 1em;
-    box-shadow: 3px 3px 4px #d3d3d3;
+    box-shadow: 1px 1px 10px 2px #c0c0c0;
     padding: 1em;
 }
 
@@ -116,7 +115,7 @@ main{
     height: 3em;
     font-weight: bold;
     margin: 0 2vw;
-    box-shadow: 2px 2px 5px #d3d3d3;
+    box-shadow: 1px 1px 10px 2px #c0c0c0;
 }
 
 .btn-encr:hover{
@@ -142,7 +141,7 @@ main{
     height: 3em;
     font-weight: bold;
     margin: 0 2vw;
-    box-shadow: 2px 2px 5px #d3d3d3;
+    box-shadow: 1px 1px 10px 2px #c0c0c0;
 }
 
 .btn-desencr:hover{
@@ -166,7 +165,7 @@ main{
     flex-direction: column;
     justify-content:space-evenly;
     background-color: #FFFFFF;
-    box-shadow: 5px 5px 5px #d3d3d3;
+    box-shadow: 1px 1px 10px 2px #c0c0c0;
 }
 
 .cont-section2{
@@ -224,7 +223,7 @@ main{
     height: 3em;
     font-weight: bold;
     margin: 2vw;
-    box-shadow: 2px 2px 5px #d3d3d3;
+    box-shadow: 1px 1px 10px 2px #c0c0c0;
 }
 
 .btn-copiar:hover{
