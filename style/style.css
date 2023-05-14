@@ -40,22 +40,22 @@ body{
     background-repeat: no-repeat;
 }
 
-h1{
+.casa{
     font-size: 30px;
     color: #0A3871;
     font-weight: bold;
+    text-decoration: none;
 }
 
 main{
     display: flex;
-    padding: 0 4vw;
     justify-content: center;
-    align-items: center;
 }
 
 .section-1{
-    width: 50%;
-    padding: 0 2em;
+    width: 600px;
+    padding: 0 20px;
+    margin-top: 50px;
 }
 
 .user-text{
@@ -63,16 +63,16 @@ main{
     background-color: var(--back-mClaro);
     height: 250px;
     width: 100%;
-    border-radius: 1em;
+    border-radius: 20px;
     box-shadow: 1px 1px 10px 2px #c0c0c0;
-    padding: 1em;
+    padding: 20px;
 }
 
 .user-text textarea{
     color: #0A3871;
     border: none;
     resize: none;
-    font-size: 1.8em;
+    font-size: 40px;
     height: 100%;
     width: 100%;
 }
@@ -83,23 +83,23 @@ main{
 
 .alert4users{
     display: flex;
-    margin-bottom: 1em;
-    padding: 0 1em;
+    margin-bottom: 10px;
+    padding: 0 10px;
 }
 
 .alert4users p{
-    font-size: 0.75em;
+    font-size: 13px;
     font-weight: bold;
-    margin: 0.75em;
+    margin: 10px;
     color: #575757;
 }
 
 .buttons{
     box-sizing: border-box;
-    margin-top: 2vw;
+    margin: 40px 0;
     display: flex;
-    justify-content: space-between;
-    padding: 0 3vw;
+    justify-content:space-around;
+    padding: 0 25px;
 }
 
 .btn-encr{
@@ -107,12 +107,12 @@ main{
     background-color: #0A3871;
     color: #FFFFFF;
     border: none;
-    font-size: 1.2vw;
+    font-size: 18px;
     border-radius: 20px;
-    width: 40%;
-    height: 3em;
+    width: 200px;
+    height: 40px;
     font-weight: bold;
-    margin: 0 2vw;
+    margin: 0 20px;
     box-shadow: 1px 1px 10px 2px #c0c0c0;
 }
 
@@ -133,12 +133,12 @@ main{
     background-color: #a3a3a3;
     color: #000000;
     border: none;
-    font-size: 1.2vw;
+    font-size: 18px;
     border-radius: 20px;
-    width: 40%;
-    height: 3em;
+    width: 200px;
+    height: 40px;
     font-weight: bold;
-    margin: 0 2vw;
+    margin: 0 20px;
     box-shadow: 1px 1px 10px 2px #c0c0c0;
 }
 
@@ -156,19 +156,19 @@ main{
 .section-2{
     box-sizing: border-box;
     display: flex;
-    width: 28%;
-    height: 500px;
-    padding: 1vw;
-    border-radius: 2vw;
+    width: 300px;
+    min-width: 250px;
+    padding: 10px;
+    border-radius: 20px;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content:center;
     background-color: #FFFFFF;
     box-shadow: 1px 1px 10px 2px #c0c0c0;
 }
 
 .cont-section2{
     height: 100%;
-    padding: 1em;
+    padding: 10px;
 }
 
 .cont-previo img{
@@ -177,34 +177,29 @@ main{
 }
 
 .cont-previo h3{
-    font-size: 1.6vw;
+    font-size: 20px;
     text-align: center;
     font-weight: bold;
 }
 
 .cont-previo p{
-    font-size: 1.1vw;
+    font-size: 15px;
     text-align: center;
-    margin-top: 2vw;
+    margin-top: 20px;
 }
 
 .cont-mensaje{
     display: none;
     flex-direction: column;
     height: 100%;
-    width: 100%;
 }
 
-.mensaje{
-    box-sizing: border-box;
-    padding: 1em;
+.mensaje-enc{
+    padding: 15px;
     color: var(--texto-mClaro);
-    border: none;
-    border-radius: 1vw;
-    font-size: 1.8em;
-    resize: none;
+    border-radius: 20px;
+    font-size: 30px;
     height: 85%;
-    width: 100%;
 }
 
 .mensaje:focus, .mensaje:active{
@@ -238,12 +233,41 @@ main{
 footer{
     font-size: 1.25vw;
     text-align: center;
-    margin-top: 2vw;   
+    margin-top: 2vw; 
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+}
+
+.linkedin{
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/linkedin.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.github{
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/github.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.instagram{
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/instagram.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /*--------------------MODO OSCURO-----------------------------*/
 
-body.modo-oscuro, h1.modo-oscuro{
+body.modo-oscuro, .casa.modo-oscuro{
     font-family: 'Montserrat', sans-serif;
     background-color: #313131;
     color: #FFFFFF;
@@ -253,8 +277,9 @@ body.modo-oscuro, h1.modo-oscuro{
     background-image: url(../img/modo-nocturno-inverted.png);
     background-color: var(--back-mOscuro);
     border: none;
-    height: 3vw;
-    width: 3vw;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
 }
 
 .logo.modo-oscuro{
@@ -273,7 +298,7 @@ body.modo-oscuro, h1.modo-oscuro{
     background-color: var(--back-mOscuro);
 }
 
-.alert4users p.modo-oscuro, .mensaje.modo-oscuro{
+.alert4users p.modo-oscuro, .mensaje-enc.modo-oscuro{
     color: var(--back-mClaro);
 }
 
@@ -286,9 +311,61 @@ body.modo-oscuro, h1.modo-oscuro{
     box-shadow: 0px 0px 7px #0357c4;
 }
 
+.linkedin.modo-oscuro{
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/linkedin-inverted.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+.github.modo-oscuro{
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/github-inverted.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+.instagram.modo-oscuro{
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/instagram-inverted.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+/* ********************* MEDIA QUERIES ********************************/
+
+@media (max-width: 800px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-1{
+        width: 80%;
+        margin-top: 0px;
+    }
+
+    .cont-previo img{
+        display: none;
+    }
+
+    .section-2{
+        width: 80%;
+    }
+}
+
+@media (max-width: 550px) {
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-encr{
+        margin-bottom: 30px;
+    }
+}
 
 
 

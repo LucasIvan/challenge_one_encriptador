@@ -1,5 +1,5 @@
 const textArea = document.querySelector(".input-text");
-const mensaje = document.querySelector(".mensaje");
+const mensaje = document.querySelector(".mensaje-enc");
 
 function btnEncriptar() {
     document.getElementById("previo").style.display = "none";
